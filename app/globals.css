@@ -7,12 +7,30 @@
     font-family: Milletun;
     src: url("/fonts/Milletun.otf");
   }
+  @font-face {
+    font-family: Saira;
+    src: url("/fonts/SairaStencilOne.ttf");
+  }
+  @font-face {
+    font-family: g7_1943;
+    src: url("/fonts/g7_1943.ttf");
+  }
 
   h1 {
     @apply text-6xl;
   }
   h2 {
-    @apply text-4xl;
+    @apply text-4xl font-extralight;
+  }
+  h3 {
+    @apply text-2xl font-extralight;
+  }
+
+  a {
+    color: aqua;
+    &:hover {
+      color: #f0f;
+    }
   }
 }
 
@@ -38,4 +56,69 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+}
+
+
+/* Custom elements */
+.animate-underline {
+  position: relative;
+
+  &::after {
+    background: #f0f;
+    content: "";
+    height: 1px;
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    top: 100%;
+    transform: translateY(.6em);
+    transition: opacity .3s,transform .3s;
+    width: 100%;
+  }
+
+  &:hover::after {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.scroll-indicator {
+  width: 2px;
+  background-color: white;
+  height: 10vh;
+  margin-bottom: 10vh;
+
+  animation: scroll-indicator-move 2s infinite ease-in-out 2s backwards;
+}
+
+
+/* Animations */
+@keyframes background-scroll {
+  from {
+      background-position: 0 0;
+  }
+  to {
+      background-position: 32px 32px;
+  }
+}
+
+@keyframes fade-in-cyan-shadow {
+  from {
+      text-shadow: 1px 1px #0ff0, 2px 2px #0ff0, 3px 3px #0ff0, 4px 4px #0ff0;
+  }
+  to {
+      text-shadow: 1px 1px #0ff, 2px 2px #0ff, 3px 3px #0ff, 4px 4px #0ff
+  }
+}
+
+@keyframes scroll-indicator-move {
+  0% {
+      transform: translateY(-50%) scaleY(0);
+  }
+  50% {
+      transform: translateY(0) scaleY(1);
+  }
+  100% {
+      transform: translateY(50%) scaleY(0);
+  }
 }

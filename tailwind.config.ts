@@ -8,7 +8,9 @@ const config: Config = {
   ],
   theme: {
     fontFamily: {
-      'title': ['Milletun']
+      'title': ['Milletun'],
+      'fung': ['Saira'],
+      'g7': ['g7_1943'],
     },
     extend: {
       backgroundImage: {

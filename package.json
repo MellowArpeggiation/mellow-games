@@ -10,6 +10,7 @@
     "deploy": "next build && firebase deploy"
   },
   "dependencies": {
+    "@mellowarpeggiation/fung.js": "^0.0.7",
     "@react-spring/parallax": "^9.7.3",
     "firebase": "^10.5.2",
     "next": "14.0.0",
