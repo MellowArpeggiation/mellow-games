@@ -42,7 +42,7 @@ export default function Home() {
           </div>
         </ParallaxLayer>
 
-        <ParallaxLayer sticky={{ start: 0.65 }}>
+        <ParallaxLayer className='sticky-fix' sticky={{ start: 0.65 } }>
           <Nav simple={true} />
         </ParallaxLayer>
 
@@ -50,6 +50,20 @@ export default function Home() {
           <div className='container m-auto'>
             <h2>About</h2>
             <p>MELLOW PTY LTD is games</p>
+            <br />
+            <p>Here is a list of links we&apos;re gonna put here in a nicely formatted way <em>soon™</em></p>
+            <ul className='list-disc list-inside'>
+              <li><a className='animate-underline' href="https://mellowarpeggiation.itch.io/">Itch.io</a></li>
+              <li><a className='animate-underline' href="https://store.steampowered.com/search/?developer=MELLOW%20PTY%20LTD">Steam</a></li>
+              <li><a className='animate-underline' href="https://discord.gg/KXfe8TQugK">MELLOW Community Discord</a></li>
+            </ul>
+          </div>
+        </ParallaxLayer>
+
+        <ParallaxLayer offset={1.3} speed={1.2}>
+          <div className='container m-auto'>
+            <h2>Team</h2>
+            <p>MELLOW PTY LTD is <a className='animate-underline' href='http://arpeggi.at/'>George</a></p>
           </div>
         </ParallaxLayer>
       </Parallax>
