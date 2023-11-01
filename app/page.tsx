@@ -4,6 +4,7 @@ import { useRef } from 'react'
 import Header from '@/components/header'
 import Nav from '@/components/nav'
 import './title.css'
+import { FaCarBurst } from 'react-icons/fa6'
 
 export default function Home() {
   const parallax = useRef<IParallax>(null!)
@@ -12,7 +13,7 @@ export default function Home() {
     <main>
       <Parallax ref={parallax} pages={2}>
         {/* Behind BG elements */}
-        <ParallaxLayer offset={0.8} speed={-0.5}>
+        <ParallaxLayer offset={0.8} speed={-0.4}>
           <div className='scroll-indicator m-auto'></div>
         </ParallaxLayer>
 
@@ -22,9 +23,12 @@ export default function Home() {
 
 
         {/* Ents */}
-        <ParallaxLayer offset={0.8} speed={-0.5}>
-
-        </ParallaxLayer>
+        {/* <ParallaxLayer offset={1.5} speed={-0.5}>
+          <div className='text-4xl text-slate-800'>
+            <div></div>
+            <FaCarBurst />
+          </div>
+        </ParallaxLayer> */}
 
 
         {/* Content */}

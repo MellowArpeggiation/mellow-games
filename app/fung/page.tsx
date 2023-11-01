@@ -28,8 +28,9 @@ export default function Fung() {
     }, []);
     
     return <main>
+        <div className="animate-fade-out -z-10 w-full h-screen fixed bg-black" />
         <FungCanvas
-            className="fung-sim fixed -z-10"
+            className="fung-sim fixed -z-20"
             width={width}
             portrait={portrait}
             agentCount={50000}

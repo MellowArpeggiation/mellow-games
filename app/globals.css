@@ -91,8 +91,30 @@ body {
   animation: scroll-indicator-move 2s infinite ease-in-out 2s backwards;
 }
 
+.animate-fade-out {
+  animation: fade-out 6s 0.5s forwards;
+}
+
 
 /* Animations */
+@keyframes fade-in {
+  from {
+      opacity: 0;
+  }
+  to {
+      opacity: 1;
+  }
+}
+
+@keyframes fade-out {
+  from {
+      opacity: 1;
+  }
+  to {
+      opacity: 0;
+  }
+}
+
 @keyframes background-scroll {
   from {
       background-position: 0 0;

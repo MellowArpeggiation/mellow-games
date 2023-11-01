@@ -32,9 +32,9 @@ const Nav = ({
                 <Link href="/good-boy">Good Boy</Link>
             </ul>
         </div>
-        
+
         {!simple && 
-            <div className='w-48'>
+            <div className='w-48 my-auto'>
                 <p className='text-slate-600 text-right'>©️ MELLOW PTY LTD</p>
             </div>
         }

@@ -34,12 +34,12 @@
         background-attachment: fixed;
 
         background-size: 32px 32px;
-        animation: background-scroll 1s linear infinite, fade-in 4s linear 1 1s backwards;
+        animation: background-scroll 1s linear infinite;
 
         /* Scale the background animation based on pixel density */
         @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
             background-size: 16px 16px;
-            animation: background-scroll 2s linear infinite, fade-in 4s linear 1 1s backwards;
+            animation: background-scroll 2s linear infinite;
         }
 
         & > span {
