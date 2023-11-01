@@ -15,6 +15,10 @@
     font-family: g7_1943;
     src: url("/fonts/g7_1943.ttf");
   }
+  @font-face {
+    font-family: onuava;
+    src: url("/fonts/onuava.ttf");
+  }
 
   h1 {
     @apply text-6xl;
@@ -26,11 +30,49 @@
     @apply text-2xl font-extralight;
   }
 
-  a {
-    color: aqua;
-    &:hover {
-      color: #f0f;
+  a:hover {
+    color: #f0f;
+  }
+}
+
+@layer components {
+  .animate-underline {
+    position: relative;
+
+    &::after {
+      background: #f0f;
+      content: "";
+      height: 1px;
+      left: 0;
+      opacity: 0;
+      position: absolute;
+      top: 100%;
+      transform: translateY(.6em);
+      transition: opacity .3s,transform .3s;
+      width: 100%;
     }
+
+    &:hover::after {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .scroll-indicator {
+    width: 2px;
+    background-color: white;
+    height: 10vh;
+    margin-bottom: 10vh;
+
+    animation: scroll-indicator-move 2s infinite ease-in-out 2s backwards;
+  }
+
+  .animate-fade-out {
+    animation: fade-out 6s 0.5s forwards;
+  }
+
+  .text-smallcaps {
+    font-variant: small-caps;
   }
 }
 
@@ -56,43 +98,6 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
-}
-
-
-/* Custom elements */
-.animate-underline {
-  position: relative;
-
-  &::after {
-    background: #f0f;
-    content: "";
-    height: 1px;
-    left: 0;
-    opacity: 0;
-    position: absolute;
-    top: 100%;
-    transform: translateY(.6em);
-    transition: opacity .3s,transform .3s;
-    width: 100%;
-  }
-
-  &:hover::after {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-.scroll-indicator {
-  width: 2px;
-  background-color: white;
-  height: 10vh;
-  margin-bottom: 10vh;
-
-  animation: scroll-indicator-move 2s infinite ease-in-out 2s backwards;
-}
-
-.animate-fade-out {
-  animation: fade-out 6s 0.5s forwards;
 }
 
 

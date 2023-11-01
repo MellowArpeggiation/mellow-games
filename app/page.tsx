@@ -3,7 +3,7 @@ import { IParallax, Parallax, ParallaxLayer } from '@react-spring/parallax'
 import { useRef } from 'react'
 import Header from '@/components/header'
 import Nav from '@/components/nav'
-import './title.css'
+import './page.css'
 import { FaCarBurst } from 'react-icons/fa6'
 
 export default function Home() {
@@ -33,12 +33,12 @@ export default function Home() {
 
         {/* Content */}
         <ParallaxLayer offset={0.1} speed={1}>
-          <Header title='MELLOW' />
+          <Header className="intro-header-full text-center" title='MELLOW' />
         </ParallaxLayer>
 
         <ParallaxLayer offset={0.5} speed={0.7}>
           <div className='flex items-center justify-center'>
-            <h2 className='text-center italic text-violet-800'>Inspire Genuine Joy</h2>
+            <h2 className='text-center italic text-violet-800 text-smallcaps'>Inspire Genuine Joy</h2>
           </div>
         </ParallaxLayer>
 

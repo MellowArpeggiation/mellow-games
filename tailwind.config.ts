@@ -11,6 +11,7 @@ const config: Config = {
       'title': ['Milletun'],
       'fung': ['Saira'],
       'g7': ['g7_1943'],
+      'onuava': ['Onuava'],
     },
     extend: {
       backgroundImage: {
