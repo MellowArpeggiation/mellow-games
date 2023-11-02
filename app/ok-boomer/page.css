@@ -1,3 +1,11 @@
-body {
-    background-image: radial-gradient(circle at 50% 40%, black, transparent), url("/images/screenshots/ok-ss-1.jpg");
+.bg {
+    z-index: -1;
+    position: absolute;
+    width: 100%;
+    height: 130vh;
+
+    background-image: radial-gradient(circle at 50% 20%, rgba(0, 0, 0, 0.9), transparent), linear-gradient(transparent 50%, black), url("/images/screenshots/ok-ss-1.jpg");
+    background-repeat: repeat-x;
+    background-position: top;
+    background-size: cover;
 }

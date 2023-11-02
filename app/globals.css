@@ -104,6 +104,33 @@ body {
   height: 0 !important;
 }
 
+.parallax-container, html {
+  /* background-color: cyan; */
+
+  scrollbar-color: cyan black;
+  scrollbar-width: thin;
+
+  &::-webkit-scrollbar {
+      width: 8px;
+      background-color: black;
+  }
+
+  &::-webkit-scrollbar-thumb {
+      /* very neat hack for animating the scrollbar colour! */
+      background-color: cyan;
+
+      &:horizontal:hover,
+      &:vertical:hover {
+          background-color: darken(cyan, 10%);
+      }
+
+      &:horizontal:active,
+      &:vertical:active {
+          background-color: darken(cyan, 20%);
+      }
+  }
+}
+
 
 /* Animations */
 @keyframes fade-in {

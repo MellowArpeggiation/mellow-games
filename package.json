@@ -13,6 +13,7 @@
     "@mellowarpeggiation/fung.js": "^0.0.7",
     "@react-spring/parallax": "^9.7.3",
     "firebase": "^10.5.2",
+    "hamburger-react": "^2.5.0",
     "next": "14.0.0",
     "react": "^18",
     "react-dom": "^18",
