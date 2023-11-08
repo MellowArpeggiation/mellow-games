@@ -14,10 +14,12 @@ export default function DriftKing() {
 
             <h3 className="text-center mb-12">Racing has evolved.</h3>
 
+            <div className="aspect-video w-full lg:w-6/12 m-auto mb-12 lg:mb-0 lg:float-left lg:mr-6">
+                <iframe className="w-full h-full" src="https://www.youtube.com/embed/OfYcWmoyC1w?si=f-h-AJFoqmibAZnG&amp;controls=0" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen={true}></iframe>
+            </div>
+
             <p className="mb-4">Congress has taken notice of the popularity of Drift Racing, and has mandated the installation of the Unreal Boost Energy Recovery System on all road cars, because it would be &quot;fully sick, brah&quot;.</p>
-
-            <p className="mb-4">But the official racing scene still reigns supreme</p>
-
+            <p className="mb-4">But the official racing scene still reigns supreme, controlled by the dastardly Grant Urismo.</p>
             <p className="mb-4">Enter an open-world arcade racer, tuned to give the fastest and most exhilarating driving experience possible</p>
 
             <hr className="my-24" />
