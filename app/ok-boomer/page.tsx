@@ -17,7 +17,7 @@ export default function OkBoomer() {
             <br />
             <p className="mb-12">Grease your ray phlasers and get ready...</p>
 
-            <div className="aspect-video w-full lg:w-6/12 m-auto mb-12">
+            <div className="aspect-video w-full lg:w-6/12 m-auto mb-12 lg:mb-0 lg:float-left lg:mr-6">
                 <iframe src="https://player.vimeo.com/video/447658692?h=7c8c5a7c97" style={{ width: '100%', height: '100%' }} allow="autoplay; fullscreen; picture-in-picture" allowFullScreen></iframe>
             </div>
 
