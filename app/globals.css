@@ -1,3 +1,5 @@
+/* @import "~react-image-gallery/styles/css/image-gallery.css"; */
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -128,6 +130,20 @@ body {
       &:vertical:active {
           background-color: darken(cyan, 20%);
       }
+  }
+}
+
+.image-gallery-image {
+  image-rendering: pixelated;
+}
+
+button.image-gallery-thumbnail {
+  width: 208px;
+
+  &.active,
+  &:focus,
+  &:hover {
+    border-color: lime;
   }
 }
 
