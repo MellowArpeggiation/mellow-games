@@ -38,7 +38,7 @@ const Nav = ({
         })
     })
 
-    return <div className={`flex justify-between transition-colors ${isOpen || isScrolled ? "bg-opacity-75" : ""} z-100 fixed w-full bg-black bg-opacity-25 p-4 ${simple ? "" : "border-b border-b-white border-opacity-50"}`}>
+    return <div className={`flex justify-between transition-colors ${isOpen || isScrolled ? "bg-opacity-75" : ""} z-10 fixed w-full bg-black bg-opacity-25 p-4 ${simple ? "" : "border-b border-b-white border-opacity-50"}`}>
         {!simple &&
             <div className="my-auto">
                 <a href="/"><Header title="MELLOW" /></a>
@@ -49,7 +49,7 @@ const Nav = ({
             {(isOpen || simple) && <Links />}
         </div>
         
-        <div className='my-auto flex-1 hidden lg:block'>
+        <div className={`my-auto flex-1 hidden lg:block ${simple ? "my-2" : ""}`}>
             <Links />
         </div>
 
