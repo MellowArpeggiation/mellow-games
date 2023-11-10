@@ -145,7 +145,7 @@ export default function Fung() {
 
             <h2 className="mb-12 text-center">AVAILABLE NOW IN EARLY ACCESS!</h2>
 
-            <iframe className="mx-auto" src="https://store.steampowered.com/widget/2467310/" width="646" height="190"></iframe>
+            <iframe className="mx-auto max-w-max" src="https://store.steampowered.com/widget/2467310/" width="646" height="190"></iframe>
 
             <h3 className="mt-12 text-center">COPYRIGHT 2023 - MELLOW PTY LTD ^</h3>
         </div>
